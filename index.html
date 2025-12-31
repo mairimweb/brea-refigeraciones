@@ -1,14 +1,276 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brea Refrigeraciones</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brea Refrigeraciones - Servicio Técnico de Aire Acondicionado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #254F94;
+            --secondary-color: #40B8E3;
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .hero-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            font-weight: 600;
+            padding: 12px 30px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #34a2c4;
+            border-color: #34a2c4;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+        }
+
+        .service-card {
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .trust-item i {
+            color: var(--secondary-color);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .footer h2{
+            font-weight: 700;
+        }
+
+        .footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            z-index: 1000;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
 </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <img src="#" alt="Logo Brea Refrigeraciones" class="img-fluid mb-4" style="max-width: 200px; margin: 0 auto; display: block;">
+            <h1 class="display-4">¡Que el calor no te detenga!</h1>
+            <p class="lead">Servicio técnico especializado en mantenimiento, limpieza profunda y reparaciones. Garantizamos el clima ideal para tu hogar u oficina con **Brea Refrigeraciones**.</p>
+            <a href="https://wa.me/5491153124793?text=Hola,%20quisiera%20pedir%20un%20presupuesto." class="btn btn-primary btn-lg" target="_blank" rel="nofollow">Pedir Presupuesto por WhatsApp</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Why Maintenance Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">¿Por qué es vital el mantenimiento?</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-icon mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h4>Ahorro Energético</h4>
+                        <p>Un equipo limpio consume hasta un 30% menos de luz, reduciendo tu factura eléctrica.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-icon mb-3"><i class="bi bi-shield-check"></i></div>
+                        <h4>Salud Ambiental</h4>
+                        <p>Eliminamos hongos, ácaros y bacterias acumulados en los filtros para un aire más puro.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-icon mb-3"><i class="bi bi-wrench-adjustable-circle"></i></div>
+                        <h4>Mayor Vida Útil</h4>
+                        <p>Evitás roturas costosas y fallas inesperadas detectando problemas a tiempo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder Image Section -->
+        <div class="container my-5 text-center">
+            <img src="img/tecnico-trabajando.jpg" class="img-fluid rounded shadow" alt="Técnico trabajando en un aire acondicionado">
+        </div>
+
+        <!-- Services Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios Especializados</h2>
+                <div class="row">
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="service-card">
+                            <h3>Limpieza Integral Profunda</h3>
+                            <p>Desarmado y desinfección total de unidad interior y exterior. Limpieza de filtros, turbinas y bandejas de drenaje para un aire puro y sin olores.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="service-card">
+                            <h3>Mantenimiento Preventivo</h3>
+                            <p>Control de carga de gas, revisión de conexiones eléctricas y chequeo de rendimiento. La mejor forma de evitar que tu equipo falle cuando más lo necesitás.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="service-card">
+                            <h3>Servicio Técnico de Reparación</h3>
+                            <p>Diagnóstico especializado para equipos que no enfrían, gotean o hacen ruidos extraños. Soluciones rápidas con repuestos de calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Before and After Image Section -->
+        <!-- <div class="container my-5">
+            <h2 class="section-title">Resultados Visibles</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <p class="text-center"><strong>ANTES</strong></p>
+                    <img src="#" class="img-fluid rounded shadow mx-auto d-block" alt="Turbina de aire acondicionado sucia">
+                </div>
+                <div class="col-md-6 mb-4">
+                     <p class="text-center"><strong>DESPUÉS</strong></p>
+                    <img src="#" class="img-fluid rounded shadow mx-auto d-block" alt="Turbina de aire acondicionado limpia">
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Why Choose Us Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Por qué elegir Brea Refrigeraciones</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center trust-item mb-4">
+                        <i class="bi bi-person-check-fill fs-1"></i>
+                        <h4 class="mt-3">Técnicos Calificados</h4>
+                        <p>Experiencia comprobable en equipos Split y de Ventana.</p>
+                    </div>
+                    <div class="col-md-4 text-center trust-item mb-4">
+                        <i class="bi bi-patch-check-fill fs-1"></i>
+                        <h4 class="mt-3">Garantía en el Trabajo</h4>
+                        <p>Cada intervención cuenta con nuestro respaldo técnico.</p>
+                    </div>
+                    <div class="col-md-4 text-center trust-item mb-4">
+                        <i class="bi bi-clock-history fs-1"></i>
+                        <h4 class="mt-3">Puntualidad y Limpieza</h4>
+                        <p>Respetamos tus tiempos y cuidamos tu espacio de trabajo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2>¿Listo para disfrutar del frío real?</h2>
+            <p>No esperes a que tu equipo se rompa. Agendá hoy mismo tu visita técnica.</p>
+            <hr class="my-4">
+            <p class="mb-1"><strong>Brea Refrigeraciones</strong></p>
+            <p class="mb-1">📍 Zona de Cobertura: Capital Federal y GBA</p>
+            <p class="mb-1">📞 <a href="tel:+5491153124793" rel="nofollow">+54 9 11 5312-4793</a></p>
+            <p>✉️ <a href="mailto:brearefrigeraciones@gmail.com" rel="nofollow">brearefrigeraciones@gmail.com</a></p>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="https://www.instagram.com/brea_refrigeraciones" target="_blank" rel="nofollow" class="text-white mx-2 fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/5491153124793?text=Hola,%20vengo%20desde%20la%20página%20web%20y%20quisiera%20hacer%20una%20consulta." target="_blank" rel="nofollow" class="text-white mx-2 fs-4">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5491153124793?text=Hola,%20vengo%20desde%20la%20página%20web%20y%20quisiera%20hacer%20una%20consulta." target="_blank" class="whatsapp-float" rel="nofollow">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
